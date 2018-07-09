@@ -1,0 +1,76 @@
+.main{
+	margin-left: 150px;
+	width: 1200px;
+	margin-top:30px;
+	border: 1px solid green;
+}
+.header{
+	width: 100%;
+	border:0px;
+	height: 100px;
+}
+.search_btn{
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 0 10px;
+	color: #fff;
+	font-size:14px;
+	font-weight:600;
+	cursor:pointer;
+	background: url("default/index_icon_r2_c2.gif") repeat-x;
+}
+.new-contentarea { 
+	width: 100%; 
+	overflow: hidden; 
+	margin: 0 auto; 
+	position: relative;
+
+}
+
+.new-contentarea label { 
+	width: 100%; 
+	height: 100%; 
+	display: block;
+
+}
+
+
+.new-contentarea input[type=file] { 
+	width: 188px; 
+	height: 60px; 
+	background: #333; 
+	margin: 0 auto; 
+	position: absolute; 
+	right: 50%; 
+	margin-right: -94px; 
+	top: 0; 
+	right: 0px; 
+	margin-right: 0px; 
+	width : 10px; 
+	opacity: 0; 
+	filter: alpha(opacity = 0); 
+	z-index: 2;
+
+}
+
+a.upload-img { 
+	width: 100px; 
+	display: inline-block;
+	margin-bottom: 10px; 
+	height: 27px; 
+	line-height: 27px; 
+	font-size: 16px; 
+	color: #FFFFFF; 
+	background-color: #f38e81;
+	border-radius: 3px; 
+	text-decoration: none; 
+	cursor: pointer;
+}
+
+a.upload-img:hover { 
+	background-color: #ec7e70;
+}
+
+.tc {
+	width:150px;
+	text-align: center;
+}

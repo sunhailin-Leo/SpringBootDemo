@@ -1,0 +1,128 @@
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	font-family: Verdana;
+	color: #333;
+}
+
+img {
+	border: 0
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	font-size: 12px;
+}
+
+td {
+	font-size: 12px;
+}
+
+html {
+	height: 100%
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #067098;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF6600;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+.top {
+	height: 75px;
+	background: url(default/logo.jpg) no-repeat;
+}
+/*header nav*/
+ul.nav {
+	font-size: 14px;
+	overflow: hidden;
+	position: relative;
+	margin-left: 150px;
+	z-index: 4;
+	margin-top: 8px;
+	width: auto;
+	_width: 100%;
+	border-bottom: 3px solid #0099cc;
+	z-index: 4;
+	margin-bottom: 0px;
+}
+
+ul.nav li {
+	background: url(default/btn_bg.gif) no-repeat scroll right -115px;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+}
+
+ul.nav li.navon {
+	background: url(default/btn_bg.gif) no-repeat scroll 0 0;
+	line-height: 33px;
+	float: left;
+	height: 38px;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.nav li.navon em {
+	background: url(default/btn_bg.gif) no-repeat scroll right -50px;
+	display: block;
+}
+
+ul.nav li.navon em a {
+	background: url(default/btn_bg.gif) no-repeat scroll center bottom;
+	color: #FFFFFF;
+	display: block;
+	font-weight: 700;
+	padding: 5px 12px;
+}
+
+ul.nav li.navon em a:hover {
+	color: #FFFFFF;
+}
+
+.nav li a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+.nav li a {
+	color: #639BB0;
+	font-weight: 700;
+	padding: 5px 12px;
+}
+
+em, cite, th {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.wei {
+	height: 32px;
+	line-height: 30px;
+	padding-left: 1em;
+	margin-left:150px;
+}
+
+.fl {
+	float: left
+}

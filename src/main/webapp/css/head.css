@@ -1,0 +1,104 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	color: grey;
+	height: 81px;
+	background: url(default/background.png) repeat-x;
+}
+
+.main {
+	margin: 0px auto;
+	width: 1024px;
+}
+
+.top {
+	height: 52px;
+	margin-top: 24px;
+	background: url(default/logo.jpg) no-repeat;
+}
+
+.top p {
+	float: right;
+	margin-top: 20px;
+}
+
+.top_menu {
+	border: solid #ddd 1px;
+	border-radius: 3px;
+}
+
+
+.menu {
+	border-radius: 3px;
+	height: 37px;
+	background: url(default/nav_center.gif) repeat-x;
+}
+.menu ul{
+	margin-left: 30px;
+}
+.menu ul li {
+	float: left;
+	list-style-type: none;
+	line-height: 37px;
+	width: 102px;
+	text-align: center;
+}
+.menu ul li:first-child{
+	background: url(default/nav_cur.gif);
+}
+.sy {
+	color: black;
+	font-weight: bold;
+}
+.zt {
+	display: block;
+	height: 37px;
+	width: 102px;
+	color: white;
+	font-weight: bold;
+}
+.zt:hover{
+	background: url(default/nav_hover.gif);
+}
+.search{
+	height:80px;
+	
+}
+.search div{
+	margin-top: 20px;
+	float: left;
+}
+.search_num{
+	margin-left: 20px;
+}
+.search_text{
+	border:solid 1px aquamarine;
+	height: 30px;
+	width: 400px;
+	margin-left:40px ;
+}
+.search_but{
+	width: 89px;
+	height: 32px;
+	margin-left: -4px;
+	background: url(default/search_btn.gif) no-repeat;
+	border: none;
+}
+.to_ask{
+	width: 89px;
+	height: 32px;
+	background: url(default/ask.gif) no-repeat;
+	border: none;
+}
+.search_people{
+	margin-left: 40px;
+}

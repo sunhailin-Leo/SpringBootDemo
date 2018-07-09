@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pxk.springboot.dao.UserMapper">
+	<!-- 使用别名的目的是让查询结果属性名称和实体bean的属性名对应，要不让绑定不上数据。要么就写resultMap这个大家自己搞了 -->
+	<select id="findUserByPage" resultType="User">
+		select id, name,age,gender,pass_word passWord,regest_date regestDate from user limit #{startIndex},#{pageSize};
+	</select>
+
+	<insert id="addUser" parameterType="User">
+		insert into
+		User
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="name != null and name!=''">
+				name,
+			</if>
+			<if test="gender != null and gender!=''">
+				gender,
+			</if>
+			<if test="passWord != null and passWord!=''">
+				passWord,
+			</if>
+			<if test="regestDate != null">
+				regest_date,
+			</if>
+			<if test="age != null and age !=''">
+				age
+			</if>
+			
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null and name!=''">
+				#{name,jdbcType=VARCHAR},
+			</if>
+			<if test="gender != null and gender!=''">
+				#{gender,jdbcType=CHAR},
+			</if>
+			<if test="passWord != null and passWord !=''">
+				#{passWord,jdbcType=VARCHAR},
+			</if>
+			<if test="regestDate != null ">
+				#{regestDate,javaType=java.util.Date},
+			</if>
+			<if test="age !=null and age !=''">
+				#{age}
+			</if>
+		</trim>
+	</insert>
+<update id="updateUser" parameterType="User">
+		update user
+		<set>
+			<if test="name!=null and name!=''">
+				name=#{name},
+			</if>
+			<if test="gender and gender!=''">
+				gender=#{gender},
+			</if>
+			<if test="passWord !=null and passWord !=''">
+				passWord=#{passWord},
+			</if>
+			<if test="age !=null and age !=''">
+				age=#{age}
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+	<select id="getUserById" parameterType="int" resultType="User">
+		select * from user where id=#{id}
+	</select>
+
+	<delete id="deleteUser" parameterType="User">
+		delete from user where id=#{id}
+	</delete>
+	<select id="findCount" resultType="long">
+		select count(id) count from user
+	</select>
+</mapper>
